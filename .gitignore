@@ -1,0 +1,234 @@
+# ==============================================
+# ROS2 + Python 프로젝트용 .gitignore
+# ==============================================
+
+# ==================== Python ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ==================== ROS2 특화 ====================
+# 빌드 결과물
+build/
+install/
+log/
+
+# ROS 패키지 관련
+*.egg-info/
+
+# ==================== 보안 & 환경설정 ====================
+# 환경 변수 파일 (API 키 등 민감 정보)
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*/.env
+
+# 개인 설정 파일
+config.local.*
+*_local.*
+
+# ==================== AI/ML 모델 파일 ====================
+# YOLO 모델 가중치 (대용량)
+*.pt
+*.pth
+*.weights
+*.onnx
+
+# TensorFlow 모델
+*.tflite
+*.pb
+*.h5
+
+# 기타 모델 파일
+*.pkl
+*.joblib
+*.model
+
+# ==================== 미디어 & 데이터 ====================
+# 오디오/비디오 파일
+*.wav
+*.mp3
+*.mp4
+*.avi
+
+# 이미지 파일 (로그/캐시용)
+**/temp_images/
+**/cache_images/
+output.*
+
+# 데이터셋
+**/datasets/
+**/data/
+*.csv
+*.json.bak
+
+# ==================== 실행 파일 & 바이너리 ====================
+# Linux 실행 파일
+*.AppImage
+*.deb
+*.rpm
+
+# Windows 실행 파일
+*.exe
+*.msi
+
+# 압축 파일
+*.zip
+*.tar.gz
+*.rar
+
+# ==================== 개발 도구 ====================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==================== 시스템 파일 ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+desktop.ini
+
+# Linux
+*~
+
+# ==================== 로그 & 임시 파일 ====================
+# 로그 파일
+*.log
+*.out
+logs/
+
+# 임시 파일
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 백업 파일
+*.bak
+*.backup
+*.old
+
+# ==================== 프로젝트 특화 ====================
+# 빈 파일들 (실제로는 불필요)
+dum_e/resource/dum_e
+
+# 테스트 출력
+test_output/
+**/test_results/
+
+# 캐시 폴더
+cache/
+.cache/
