@@ -17,8 +17,6 @@
 - [🚀 실행 방법](#-실행-방법)
 - [🎮 사용법](#-사용법)
 - [📁 프로젝트 구조](#-프로젝트-구조)
-- [🤝 기여하기](#-기여하기)
-- [📄 라이선스](#-라이선스)
 
 ## 🎯 주요 기능
 
@@ -238,37 +236,4 @@ Rokey_DUM-E/
 │       └── ActionDetection.action  # 검출 액션
 ├── .gitignore                      # Git 제외 파일 목록
 └── README.md                       # 프로젝트 문서
-```
-
-## 🔧 고급 설정
-
-### 📊 성능 튜닝
-
-**GPU 가속 활성화:**
-```bash
-# CUDA 설치 확인
-nvidia-smi
-
-# GPU 메모리 설정
-export CUDA_VISIBLE_DEVICES=0
-```
-
-**카메라 설정 최적화:**
-```python
-# realsense.py에서 해상도/FPS 조정
-pipeline.start(config)
-```
-
-### 🎯 정확도 향상
-
-**YOLO 모델 학습:**
-```bash
-# 커스텀 데이터셋으로 재학습
-python train.py --data custom_tools.yaml --weights yolov8n.pt
-```
-
-**음성 인식 개선:**
-```python
-# STT 모델 변경 (stt.py)
-model = whisper.load_model("large-v2")
 ```
