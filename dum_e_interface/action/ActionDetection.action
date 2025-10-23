@@ -1,0 +1,9 @@
+# Goal
+string target
+---
+# Result
+bool success
+float64[] depth_position
+---
+# Feedback
+# Empty since the client doesn't need to send any data
